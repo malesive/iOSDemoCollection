@@ -14,6 +14,7 @@
 		9E80F4F91B9C20D500894892 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E80F4F81B9C20D500894892 /* Images.xcassets */; };
 		9E80F4FC1B9C20D500894892 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E80F4FA1B9C20D500894892 /* LaunchScreen.xib */; };
 		9E80F5081B9C20D500894892 /* GCDAsyncSocketDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E80F5071B9C20D500894892 /* GCDAsyncSocketDemoTests.m */; };
+		9E80F5141B9C20EB00894892 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E80F5131B9C20EB00894892 /* GCDAsyncSocket.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		9E80F5011B9C20D500894892 /* GCDAsyncSocketDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GCDAsyncSocketDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E80F5061B9C20D500894892 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E80F5071B9C20D500894892 /* GCDAsyncSocketDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocketDemoTests.m; sourceTree = "<group>"; };
+		9E80F5121B9C20EB00894892 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		9E80F5131B9C20EB00894892 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,7 @@
 		9E80F4EA1B9C20D500894892 /* GCDAsyncSocketDemo */ = {
 			isa = PBXGroup;
 			children = (
+				9E80F5111B9C20DC00894892 /* GCDAsyncSocket */,
 				9E80F4EF1B9C20D500894892 /* AppDelegate.h */,
 				9E80F4F01B9C20D500894892 /* AppDelegate.m */,
 				9E80F4F21B9C20D500894892 /* ViewController.h */,
@@ -117,6 +121,15 @@
 				9E80F5061B9C20D500894892 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9E80F5111B9C20DC00894892 /* GCDAsyncSocket */ = {
+			isa = PBXGroup;
+			children = (
+				9E80F5121B9C20EB00894892 /* GCDAsyncSocket.h */,
+				9E80F5131B9C20EB00894892 /* GCDAsyncSocket.m */,
+			);
+			name = GCDAsyncSocket;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,6 +232,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E80F5141B9C20EB00894892 /* GCDAsyncSocket.m in Sources */,
 				9E80F4F41B9C20D500894892 /* ViewController.m in Sources */,
 				9E80F4F11B9C20D500894892 /* AppDelegate.m in Sources */,
 				9E80F4EE1B9C20D500894892 /* main.m in Sources */,
