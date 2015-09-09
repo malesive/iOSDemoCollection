@@ -24,7 +24,7 @@
     
     self.imageView.contentMode = UIViewContentModeScaleAspectFit;
     
-    NSLog(@"github test003");
+    NSLog(@"github test004");
     
     //第一种 每一秒执行一次（重复性）
 //    double delayInSeconds = 1.0;
