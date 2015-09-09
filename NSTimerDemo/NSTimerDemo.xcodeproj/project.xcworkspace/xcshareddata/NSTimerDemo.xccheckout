@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>44644CE1-4D20-4FDB-872D-5DDF27EE1D9C</string>
+	<key>IDESourceControlProjectName</key>
+	<string>NSTimerDemo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>1C400D3A5103FA4D41BFAAFD2E7BC78AA56388AD</key>
+		<string>https://github.com/malesive/iOSDemoCollection.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>NSTimerDemo/NSTimerDemo.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>1C400D3A5103FA4D41BFAAFD2E7BC78AA56388AD</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/malesive/iOSDemoCollection.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>1C400D3A5103FA4D41BFAAFD2E7BC78AA56388AD</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>1C400D3A5103FA4D41BFAAFD2E7BC78AA56388AD</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iOSDemoCollection</string>
+		</dict>
+	</array>
+</dict>
+</plist>
