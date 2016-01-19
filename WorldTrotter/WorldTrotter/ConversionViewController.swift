@@ -97,4 +97,22 @@ class ConversionViewController: UIViewController, UITextFieldDelegate {
         
     }
     
+    //Silver Challenge: Dark Mode
+//    var modeFlag: Bool = false {
+//        didSet {
+//            if modeFlag {
+//                view.backgroundColor = UIColor.lightGrayColor()
+//            }
+//            else {
+//                view.backgroundColor = UIColor.purpleColor()
+//            }
+//        }
+//    }
+//    
+//    override func viewWillAppear(animated: Bool) {
+//        super.viewWillAppear(animated)
+//        
+//        modeFlag = !modeFlag
+//    }
+    
 }
