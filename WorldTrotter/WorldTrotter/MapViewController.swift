@@ -51,8 +51,8 @@ class MapViewController: UIViewController,MKMapViewDelegate, CLLocationManagerDe
 //        if CLLocationManager.authorizationStatus() == .NotDetermined {
 //            locationManager.requestWhenInUseAuthorization()
 //        }
-//        mapView.userTrackingMode = .Follow
-        mapView.showsUserLocation = true
+        mapView.userTrackingMode = .Follow
+//        mapView.showsUserLocation = true
     }
     
 //    var btn: UIButton!
@@ -96,6 +96,8 @@ class MapViewController: UIViewController,MKMapViewDelegate, CLLocationManagerDe
         locationManager = CLLocationManager()
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        let distance:CLLocationDistance = 10.0
+        locationManager.distanceFilter = distance
         let authorizationStatus = CLLocationManager.authorizationStatus()
         if (authorizationStatus == CLAuthorizationStatus.NotDetermined) {
             locationManager.requestWhenInUseAuthorization()
@@ -108,6 +110,13 @@ class MapViewController: UIViewController,MKMapViewDelegate, CLLocationManagerDe
         if (status == CLAuthorizationStatus.AuthorizedWhenInUse) {
             locationManager.startUpdatingLocation()
         }
+    }
+    
+    func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        let location = locations[0]
+        let coordinate = location.coordinate
+        print("经度：\(coordinate.longitude)  纬度：\(coordinate.latitude)")
+        locationManager.stopUpdatingLocation()
     }
     
     func mapTypeChanged(segControl: UISegmentedControl){
