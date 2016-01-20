@@ -5,6 +5,14 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
+        <!--OtherViewController-->
+        <scene sceneID="bdl-ZB-Dbd">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Second" referencedIdentifier="OtherViewController" id="DYP-OQ-NIe" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jLr-E5-2dq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="646.5" y="37"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -17,7 +25,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Hx-WX-xMA">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Hx-WX-xMA">
                                 <rect key="frame" x="288" y="20" width="25" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -43,27 +51,53 @@
                                     <action selector="showAnswer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X18-g3-YHn"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gVB-b7-U7p">
+                                <rect key="frame" x="288" y="20" width="25" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bqe-v5-lAr">
+                                <rect key="frame" x="277" y="260" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="DYP-OQ-NIe" kind="show" id="E61-Aj-C8l"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="1Hx-WX-xMA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4uU-gG-vFB"/>
                             <constraint firstItem="1Hx-WX-xMA" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="BWL-U2-uzz"/>
                             <constraint firstItem="mQv-7V-wlb" firstAttribute="centerX" secondItem="lBJ-Id-ekT" secondAttribute="centerX" id="BnP-sl-FjL"/>
+                            <constraint firstItem="lBJ-Id-ekT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Dfm-bu-ghQ"/>
                             <constraint firstItem="mQv-7V-wlb" firstAttribute="top" secondItem="lBJ-Id-ekT" secondAttribute="bottom" constant="97" id="KMq-gd-Dxb"/>
                             <constraint firstItem="fOu-Yh-Bph" firstAttribute="centerX" secondItem="lBJ-Id-ekT" secondAttribute="centerX" id="Vmq-vP-j9A"/>
+                            <constraint firstItem="bqe-v5-lAr" firstAttribute="top" secondItem="fOu-Yh-Bph" secondAttribute="bottom" constant="25" id="a7E-6z-uS7"/>
                             <constraint firstItem="1Hx-WX-xMA" firstAttribute="centerX" secondItem="lBJ-Id-ekT" secondAttribute="centerX" id="n67-3c-jNn"/>
                             <constraint firstItem="lBJ-Id-ekT" firstAttribute="top" secondItem="1Hx-WX-xMA" secondAttribute="bottom" constant="8" id="o0Z-Mb-bJ8"/>
+                            <constraint firstItem="bqe-v5-lAr" firstAttribute="centerX" secondItem="fOu-Yh-Bph" secondAttribute="centerX" id="pmQ-ro-GGH"/>
+                            <constraint firstItem="gVB-b7-U7p" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qiC-Dq-CrU"/>
+                            <constraint firstItem="gVB-b7-U7p" firstAttribute="top" secondItem="1Hx-WX-xMA" secondAttribute="top" id="whw-iD-kEA"/>
                             <constraint firstItem="fOu-Yh-Bph" firstAttribute="top" secondItem="mQv-7V-wlb" secondAttribute="bottom" constant="8" id="wus-TP-lTg"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="n67-3c-jNn"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="answerLabel" destination="mQv-7V-wlb" id="I6Y-ug-9bl"/>
-                        <outlet property="questionLabel" destination="1Hx-WX-xMA" id="xcl-Ku-7A4"/>
+                        <outlet property="currentQuestionLabel" destination="1Hx-WX-xMA" id="acw-AE-eR3"/>
+                        <outlet property="currentQuestionLabelCenterXConstraint" destination="4uU-gG-vFB" id="pHY-wK-MCu"/>
+                        <outlet property="nextQuestionLabel" destination="gVB-b7-U7p" id="vsD-Dh-GM7"/>
+                        <outlet property="nextQuestionLabelCenterXConstraint" destination="qiC-Dq-CrU" id="Glk-12-Qam"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="130" y="338"/>
+            <point key="canvasLocation" x="206" y="37"/>
         </scene>
     </scenes>
 </document>

@@ -14,7 +14,13 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        questionLabel.text = questions[currentQuestionIndex]
+        currentQuestionLabel.text = questions[currentQuestionIndex]
+        updateOfScreenLabel()
+    }
+    
+    func updateOfScreenLabel() {
+        let screenWidth = view.frame.width
+        nextQuestionLabelCenterXConstraint.constant = -screenWidth
     }
 //
 //    override func didReceiveMemoryWarning() {
@@ -23,7 +29,13 @@ class ViewController: UIViewController {
 //    }
 
 
-    @IBOutlet var questionLabel: UILabel!
+//    @IBOutlet var questionLabel: UILabel!
+    @IBOutlet var currentQuestionLabel: UILabel!
+    @IBOutlet var currentQuestionLabelCenterXConstraint: NSLayoutConstraint!
+    @IBOutlet var nextQuestionLabel: UILabel!
+    @IBOutlet var nextQuestionLabelCenterXConstraint: NSLayoutConstraint!
+
+    
     @IBOutlet var answerLabel: UILabel!
     
     @IBAction func showNextQuestion(sender: AnyObject) {
@@ -33,8 +45,10 @@ class ViewController: UIViewController {
         }
         
         let question = questions[currentQuestionIndex]
-        questionLabel.text = question
+        nextQuestionLabel.text = question
         answerLabel.text = "???"
+        
+        animateLabelTransitions()
     }
 
     @IBAction func showAnswer(sender: AnyObject) {
@@ -49,6 +63,61 @@ class ViewController: UIViewController {
     
     var currentQuestionIndex = 0
     
+    
+    func animateLabelTransitions() {
+//        let animationClosure = {
+//            () -> Void in
+//            self.questionLabel.alpha = 1
+//        }
+//        
+//        //Animate the alpha
+//        UIView.animateWithDuration(0.5, animations: animationClosure)
+//        UIView.animateWithDuration(0.5, animations: {
+//            self.currentQuestionLabel.alpha = 0
+//            self.nextQuestionLabel.alpha = 1
+//        })
+        let screenWidth = view.frame.width
+        self.nextQuestionLabelCenterXConstraint.constant = 0
+        self.currentQuestionLabelCenterXConstraint.constant += screenWidth
+        
+        UIView.animateWithDuration(0.5,
+            delay: 0,
+            options: [.CurveLinear, .AllowUserInteraction],//UIViewAnimationOptions
+            animations: {
+                self.currentQuestionLabel.alpha = 0
+                self.nextQuestionLabel.alpha = 1
+                self.view.layoutIfNeeded()
+                
+            },
+            completion: { _ in
+                swap(&self.currentQuestionLabel, &self.nextQuestionLabel)
+                swap(&self.currentQuestionLabelCenterXConstraint, &self.nextQuestionLabelCenterXConstraint)
+                self.updateOfScreenLabel()
+        })
+        
+//        UIView.animateWithDuration(0.5,
+//            delay: 0.2,
+//            usingSpringWithDamping: 0.5,
+//            initialSpringVelocity: 0,
+//            options: [.CurveLinear],
+//            animations: {
+//                self.currentQuestionLabel.alpha = 0
+//                self.nextQuestionLabel.alpha = 1
+//                self.view.layoutIfNeeded()
+//            },
+//            completion: {
+//                _ in
+//                swap(&self.currentQuestionLabel, &self.nextQuestionLabel)
+//                swap(&self.currentQuestionLabelCenterXConstraint, &self.nextQuestionLabelCenterXConstraint)
+//                self.updateOfScreenLabel()
+//        })
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        nextQuestionLabel.alpha = 0
+    }
     
 }
 
