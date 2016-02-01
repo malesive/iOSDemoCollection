@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="GiZ-Jn-NUO">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="63o-Il-3RX">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="打印log信息"/>
+                                <connections>
+                                    <action selector="print:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vBW-iI-tNj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="GiZ-Jn-NUO" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="2aL-92-paq"/>
+                            <constraint firstItem="63o-Il-3RX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2bI-tz-JJ0"/>
+                            <constraint firstAttribute="trailing" secondItem="GiZ-Jn-NUO" secondAttribute="trailing" id="IxX-1z-ary"/>
+                            <constraint firstItem="GiZ-Jn-NUO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="QkH-9x-x5P"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="GiZ-Jn-NUO" secondAttribute="bottom" constant="150" id="RU4-te-l51"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="63o-Il-3RX" secondAttribute="bottom" constant="56" id="lIL-se-VPu"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="GiZ-Jn-NUO"/>
+                                <exclude reference="63o-Il-3RX"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="2aL-92-paq"/>
+                                <exclude reference="IxX-1z-ary"/>
+                                <exclude reference="QkH-9x-x5P"/>
+                                <exclude reference="2bI-tz-JJ0"/>
+                                <exclude reference="RU4-te-l51"/>
+                                <exclude reference="lIL-se-VPu"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="GiZ-Jn-NUO"/>
+                                <include reference="63o-Il-3RX"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="2aL-92-paq"/>
+                                <include reference="IxX-1z-ary"/>
+                                <include reference="QkH-9x-x5P"/>
+                                <include reference="2bI-tz-JJ0"/>
+                                <include reference="RU4-te-l51"/>
+                                <include reference="lIL-se-VPu"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="logTextView" destination="GiZ-Jn-NUO" id="te8-qn-4nb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="457.5" y="321.75"/>
+        </scene>
+    </scenes>
+</document>
