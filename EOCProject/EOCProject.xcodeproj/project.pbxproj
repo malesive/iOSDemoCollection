@@ -13,6 +13,12 @@
 		9E3D77091CB752A800A9AE05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E3D77071CB752A800A9AE05 /* Main.storyboard */; };
 		9E3D770B1CB752A800A9AE05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E3D770A1CB752A800A9AE05 /* Assets.xcassets */; };
 		9E3D770E1CB752A800A9AE05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E3D770C1CB752A800A9AE05 /* LaunchScreen.storyboard */; };
+		9E3D77171CB7536A00A9AE05 /* EOCEmployee.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E3D77161CB7536A00A9AE05 /* EOCEmployee.m */; };
+		9E3D771A1CB7590400A9AE05 /* EOCEmployeeDeveloper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E3D77191CB7590400A9AE05 /* EOCEmployeeDeveloper.m */; };
+		9E3D771D1CB7598E00A9AE05 /* EOCEmployeeDesigner.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E3D771C1CB7598E00A9AE05 /* EOCEmployeeDesigner.m */; };
+		9E3D77201CB759BC00A9AE05 /* EOCEmployeeFinance.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E3D771F1CB759BC00A9AE05 /* EOCEmployeeFinance.m */; };
+		9E3D77231CB7909900A9AE05 /* EOCAutoDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E3D77221CB7909900A9AE05 /* EOCAutoDictionary.m */; };
+		9E3D77261CB79DAE00A9AE05 /* NSString+RunTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E3D77251CB79DAE00A9AE05 /* NSString+RunTime.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +32,18 @@
 		9E3D770A1CB752A800A9AE05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9E3D770D1CB752A800A9AE05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9E3D770F1CB752A800A9AE05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E3D77151CB7536A00A9AE05 /* EOCEmployee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EOCEmployee.h; sourceTree = "<group>"; };
+		9E3D77161CB7536A00A9AE05 /* EOCEmployee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EOCEmployee.m; sourceTree = "<group>"; };
+		9E3D77181CB7590400A9AE05 /* EOCEmployeeDeveloper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EOCEmployeeDeveloper.h; sourceTree = "<group>"; };
+		9E3D77191CB7590400A9AE05 /* EOCEmployeeDeveloper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EOCEmployeeDeveloper.m; sourceTree = "<group>"; };
+		9E3D771B1CB7598E00A9AE05 /* EOCEmployeeDesigner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EOCEmployeeDesigner.h; sourceTree = "<group>"; };
+		9E3D771C1CB7598E00A9AE05 /* EOCEmployeeDesigner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EOCEmployeeDesigner.m; sourceTree = "<group>"; };
+		9E3D771E1CB759BC00A9AE05 /* EOCEmployeeFinance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EOCEmployeeFinance.h; sourceTree = "<group>"; };
+		9E3D771F1CB759BC00A9AE05 /* EOCEmployeeFinance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EOCEmployeeFinance.m; sourceTree = "<group>"; };
+		9E3D77211CB7909900A9AE05 /* EOCAutoDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EOCAutoDictionary.h; sourceTree = "<group>"; };
+		9E3D77221CB7909900A9AE05 /* EOCAutoDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EOCAutoDictionary.m; sourceTree = "<group>"; };
+		9E3D77241CB79DAE00A9AE05 /* NSString+RunTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+RunTime.h"; sourceTree = "<group>"; };
+		9E3D77251CB79DAE00A9AE05 /* NSString+RunTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+RunTime.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +85,18 @@
 				9E3D770C1CB752A800A9AE05 /* LaunchScreen.storyboard */,
 				9E3D770F1CB752A800A9AE05 /* Info.plist */,
 				9E3D76FE1CB752A800A9AE05 /* Supporting Files */,
+				9E3D77151CB7536A00A9AE05 /* EOCEmployee.h */,
+				9E3D77161CB7536A00A9AE05 /* EOCEmployee.m */,
+				9E3D77181CB7590400A9AE05 /* EOCEmployeeDeveloper.h */,
+				9E3D77191CB7590400A9AE05 /* EOCEmployeeDeveloper.m */,
+				9E3D771B1CB7598E00A9AE05 /* EOCEmployeeDesigner.h */,
+				9E3D771C1CB7598E00A9AE05 /* EOCEmployeeDesigner.m */,
+				9E3D771E1CB759BC00A9AE05 /* EOCEmployeeFinance.h */,
+				9E3D771F1CB759BC00A9AE05 /* EOCEmployeeFinance.m */,
+				9E3D77211CB7909900A9AE05 /* EOCAutoDictionary.h */,
+				9E3D77221CB7909900A9AE05 /* EOCAutoDictionary.m */,
+				9E3D77241CB79DAE00A9AE05 /* NSString+RunTime.h */,
+				9E3D77251CB79DAE00A9AE05 /* NSString+RunTime.m */,
 			);
 			path = EOCProject;
 			sourceTree = "<group>";
@@ -152,6 +182,12 @@
 				9E3D77061CB752A800A9AE05 /* ViewController.m in Sources */,
 				9E3D77031CB752A800A9AE05 /* AppDelegate.m in Sources */,
 				9E3D77001CB752A800A9AE05 /* main.m in Sources */,
+				9E3D77201CB759BC00A9AE05 /* EOCEmployeeFinance.m in Sources */,
+				9E3D77231CB7909900A9AE05 /* EOCAutoDictionary.m in Sources */,
+				9E3D771A1CB7590400A9AE05 /* EOCEmployeeDeveloper.m in Sources */,
+				9E3D77261CB79DAE00A9AE05 /* NSString+RunTime.m in Sources */,
+				9E3D771D1CB7598E00A9AE05 /* EOCEmployeeDesigner.m in Sources */,
+				9E3D77171CB7536A00A9AE05 /* EOCEmployee.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
